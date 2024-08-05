@@ -1,0 +1,91 @@
+.container {
+    width: 80%;
+    margin: 20vh auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.foodItem {
+    display: flex;
+    flex-direction: column;
+}
+
+.foodItem img {
+    width: 100%;
+    height: auto;
+}
+
+.foodItem:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / span 2;
+}
+
+.foodItem:not(:first-child) {
+    display: flex;
+    grid-column: 2 / 3;
+    flex-direction: row;
+    align-items: center;
+}
+
+.foodItem h2 {
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.foodItem .text {
+    display: flex;
+    align-items: center;
+}
+
+.foodItem span {
+    color: #000;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.foodItem p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.foodItem:not(:first-child) img {
+    width: 269px;
+    height: 222px;
+    margin-right: 20px;
+}
+
+.foodItem:not(:first-child) h2 {
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.foodItem:not(:first-child) .text {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.foodItem:not(:first-child) span {
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 10px;
+}

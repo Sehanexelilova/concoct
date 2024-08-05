@@ -1,0 +1,63 @@
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    padding: 3vh ;
+    border-top: 1px solid #bfbfbf86;
+    border-bottom: 1px solid #bfbfbf73;
+    justify-content: space-between;
+    
+}
+
+
+.imgBox {
+    display: flex;
+    width: 53%;
+    justify-content: space-between;
+}
+
+
+.imgBox img {
+    border-radius: 15px;
+}
+
+.text p {
+    font-size: 14px;
+    line-height: 24px;
+    width: 421px;
+    height: 48px;
+    font-family: Poppins;
+}
+
+
+.container>p {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 500;
+    font-family: Poppins;
+}
+
+.text h2 {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container .fa-solid {
+    width: 10px;
+    height: 10px;
+}
